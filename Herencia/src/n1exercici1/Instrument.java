@@ -7,7 +7,6 @@ public abstract class Instrument {
 
 	
 	public Instrument(String nom, int preu) {
-		super();
 		this.nom = nom;
 		this.preu = preu;
 
@@ -21,17 +20,10 @@ public abstract class Instrument {
 		return preu;
 	}
 
-
-	public void setNom(String nom) {
-		this.nom = nom;
-	}
-
-	public void setPreu(int preu) {
-		this.preu = preu;
-	}
-
 	
-	public abstract String tipus();
+
+	public abstract void tocar();
+	public abstract String toString();
 	
 	
 }

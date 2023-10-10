@@ -7,9 +7,17 @@ public class Vent extends Instrument{
 	}
 	
 	
-	public String tipus() {
+	static {
+		System.out.println("\ns'ha creat un instrument de vent");	
+	}
+	
+	public void tocar() {
 		
-		return "Esta sonant un instrument de vent";
+		System.out.println("Esta sonant un instrument de vent");
+	}
+	
+	public String toString() {
 		
+		return "instrument: " + super.getNom() + "	preu: " + super.getPreu();
 	}
 }

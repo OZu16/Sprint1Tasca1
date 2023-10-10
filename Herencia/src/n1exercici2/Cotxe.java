@@ -6,14 +6,14 @@ public class Cotxe {
 	private static String model = "xaxo";
 	private final int potencia = 999;
 	
-	public static String frenar(Cotxe cotxe) {
+	public static void frenar(Cotxe cotxe) {
 		
-		return "estic frenant";
+		System.out.println("estic frenant");
 	}
 	
-	public String accelerar(){
+	public void accelerar(){
 		
-		return "estic accelerant";
+		System.out.println("estic accelerant");
 	}
 
 }

@@ -6,8 +6,8 @@ public class MainClass {
 		
 		Cotxe vehicle1 = new Cotxe();
 		
-		System.out.println(Cotxe.frenar(vehicle1));
-		System.out.println(vehicle1.accelerar());
+		Cotxe.frenar(vehicle1);
+		vehicle1.accelerar();
 		
 	}
 

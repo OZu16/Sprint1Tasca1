@@ -6,10 +6,18 @@ public class Percussio extends Instrument {
 		super(nom, preu);
 	}
 	
-	public String tipus() {
+	static {
+		System.out.println("\ns'ha creat un instrument de percussio");	
+	}
+	
+	public void tocar() {
 		
-		return "Esta sonant un instrument de percussio";
+		System.out.println("Esta sonant un instrument de percussio");
 		
 	}
 
+	public String toString() {
+		
+		return "instrument: " + super.getNom() + "	preu: " + super.getPreu();
+	}
 }

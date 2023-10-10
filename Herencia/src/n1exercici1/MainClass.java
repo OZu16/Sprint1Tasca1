@@ -11,14 +11,20 @@ public class MainClass {
 		
 		
 		instruments.add(new Vent("flauta", 99));
-		instruments.add(new Corda("piano", 666));
-		instruments.add(new Percussio("bateria", 555));
+		System.out.println(instruments.get(0).toString());
+		instruments.get(0).tocar(); 
 		
-		System.out.println(instruments.get(0).tipus());
-		System.out.println(instruments.get(1).tipus());
-		System.out.println(instruments.get(2).tipus());
+		
+		instruments.add(new Corda("piano", 666));
+		System.out.println(instruments.get(1).toString());
+		instruments.get(1).tocar(); 
+		
 
-	
+		instruments.add(new Percussio("bateria", 555));
+		System.out.println(instruments.get(2).toString());
+		instruments.get(2).tocar(); 
+		
+
 	}
 
 }
